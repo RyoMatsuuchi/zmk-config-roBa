@@ -41,7 +41,7 @@ layers:
   - BACKSPACE
   - {t: '&to_layer_0 LANG2', h: ARROW}
   - {t: SPACE, h: NUM}
-  - {t: '&to_layer_0 INT_HENKAN', h: '6'}
+  - {t: '&to_layer_0 LANG1', h: '6'}
   - {t: ENTER, h: FUNCTION}
   - DEL
   FUNCTION:
