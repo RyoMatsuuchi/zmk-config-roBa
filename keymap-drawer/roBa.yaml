@@ -17,12 +17,12 @@ layers:
   - F
   - G
   - '&macro_alt_shift_a'
-  - '-'
+  - ''''
   - H
   - J
   - K
   - L
-  - ''''
+  - '-'
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
@@ -99,8 +99,8 @@ layers:
   - '8'
   - '9'
   - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '`'
+  - _
   - ''''
   - '~'
   - ':'
@@ -111,9 +111,9 @@ layers:
   - '5'
   - '6'
   - \
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '['
+  - ']'
+  - '{'
   - '}'
   - {t: ▽, type: trans}
   - _
@@ -315,7 +315,9 @@ combos:
   k: Sft+TAB
 - p: [11, 10]
   k: '&to_layer_0 INT_MUHENKAN'
-- p: [20, 21]
+- p: [16, 17]
   k: '"'
 - p: [24, 25]
   k: '='
+- p: [28, 29]
+  k: ':'
