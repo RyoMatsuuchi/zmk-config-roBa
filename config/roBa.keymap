@@ -33,31 +33,58 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <11 12>;
+            layers = <0>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
             key-positions = <12 13>;
+            layers = <0>;
         };
 
         muhennkann {
             bindings = <&to_layer_0 INT_MUHENKAN>;
             key-positions = <11 10>;
+            layers = <0>;
         };
 
         double_quotation {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <16 17>;
+            layers = <0>;
         };
 
         eq {
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
+            layers = <0>;
         };
 
         colon {
             bindings = <&kp COLON>;
             key-positions = <28 29>;
+            layers = <0>;
+        };
+
+        // Web会議用: Bksp+英数 同時押しでSpaceホールド（ミュート解除）
+        plain_space {
+            bindings = <&kp SPACE>;
+            key-positions = <37 38>;
+            layers = <0>;
+        };
+
+        // () + カーソル中へ (M+,)
+        parens {
+            bindings = <&macro_parens>;
+            key-positions = <30 31>;
+            layers = <0 1>;
+        };
+
+        // {} + カーソル中へ (,+.)
+        braces {
+            bindings = <&macro_braces>;
+            key-positions = <31 32>;
+            layers = <0 1>;
         };
     };
 
@@ -128,8 +155,8 @@
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F                        &kp G        &macro_alt_shift_a                 &kp SQT        &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp F13                            &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &kp BACKSPACE  &lt_to_layer_0 3 LANG2  &lt 2 SPACE      &lt_to_layer_0 6 LANG1  &lt 1 ENTER                             &kp DEL
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp F13                            &kp BACKSPACE  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &kp ESCAPE  &lt_to_layer_0 3 LANG2  &lt 2 SPACE      &lt_to_layer_0 6 LANG1  &lt 1 SEMICOLON                          &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -137,11 +164,13 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&kp F1   &kp F2   &kp F3   &kp F4   &kp F5                                    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp F11      &kp PG_UP          &kp PLUS   &kp COLON      &kp LEFT_BRACE   &kp RIGHT_BRACE   &kp PIPE
+&trans   &trans   &trans   &trans   &trans   &kp F12       &kp PG_DN          &kp TILDE  &kp QUESTION   &kp UNDERSCORE   &kp HOME           &kp BACKSLASH
+&trans   &trans   &trans   &trans   &trans   &trans        &trans             &trans                                     &kp SEMICOLON
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         NUM {
