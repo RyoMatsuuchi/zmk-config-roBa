@@ -17,7 +17,7 @@ layers:
   - F
   - G
   - '&macro_alt_shift_a'
-  - ''''
+  - BACKSPACE
   - H
   - J
   - K
@@ -29,7 +29,7 @@ layers:
   - V
   - B
   - F13
-  - BACKSPACE
+  - ENTER
   - N
   - M
   - ','
