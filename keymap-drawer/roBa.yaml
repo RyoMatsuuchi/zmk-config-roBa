@@ -43,7 +43,7 @@ layers:
   - {t: SPACE, h: NUM}
   - {t: '&to_layer_0 LANG1', h: '6'}
   - {t: ;, h: FUNCTION}
-  - ENTER
+  - '@'
   FUNCTION:
   - F1
   - F2
