@@ -324,15 +324,15 @@ combos:
 - p: [7, 8]
   k: '&macro_parens'
   l: [default, FUNCTION]
-- p: [20, 21]
+- p: [19, 20]
   k: '&macro_braces'
   l: [default]
-- p: [32, 33]
+- p: [31, 32]
   k: '&macro_brackets'
   l: [default]
-- p: [20, 21]
+- p: [19, 20]
   k: '&macro_brackets'
   l: [FUNCTION]
-- p: [32, 33]
+- p: [31, 32]
   k: '&macro_braces'
   l: [FUNCTION]
