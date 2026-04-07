@@ -9,8 +9,7 @@
 };
 
 &lt {
-    flavor = "balanced";
-    quick-tap-ms = <175>;
+    flavor = "hold-preferred";
     tapping-term-ms = <200>;
 };
 
@@ -156,6 +155,18 @@
     };
 
     behaviors {
+        // dキー専用: タイピング中の誤発火防止
+        lt_d: lt_d {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_D";
+            bindings = <&mo>, <&kp>;
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <175>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
+        };
+
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
@@ -172,7 +183,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                        &kp T                                                                          &kp Y              &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &lt 3 D       &kp F                        &kp G        &kp C_PLAY_PAUSE                           &kp QUESTION            &kp H              &kp J  &kp K      &kp L    &kp ENTER
+&kp A             &kp S         &lt_d 3 D     &kp F                        &kp G        &kp C_PLAY_PAUSE                           &kp QUESTION            &kp H              &kp J  &kp K      &kp L    &kp ENTER
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp F13                                    &lt_to_layer_0 4 SLASH  &kp N              &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
 &kp LEFT_ALT      &kp LEFT_WIN  &kp LCTRL     &kp TAB     &lt 2 LANG2             &kp SPACE        &lt_to_layer_0 6 SEMICOLON  &lt 1 LANG1                                                             &lt 5 ESC
             >;
