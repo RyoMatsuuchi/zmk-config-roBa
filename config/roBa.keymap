@@ -63,31 +63,31 @@
             layers = <0 1>;
         };
 
-        // {} + カーソル中へ (L+ENTER)
+        // {} + カーソル中へ (K+L)
         braces {
             bindings = <&macro_braces>;
-            key-positions = <20 21>;
+            key-positions = <19 20>;
             layers = <0>;
         };
 
-        // [] + カーソル中へ (.+BS)
+        // [] + カーソル中へ (,+.)
         brackets {
             bindings = <&macro_brackets>;
-            key-positions = <32 33>;
+            key-positions = <31 32>;
             layers = <0>;
         };
 
-        // 「」+ カーソル中へ (L+ENTER, FUNCTIONレイヤー)
+        // 「」+ カーソル中へ (K+L, FUNCTIONレイヤー)
         jp_kakko {
             bindings = <&macro_brackets>;
-            key-positions = <20 21>;
+            key-positions = <19 20>;
             layers = <1>;
         };
 
-        // 『』+ カーソル中へ (.+BS, FUNCTIONレイヤー)
+        // 『』+ カーソル中へ (,+., FUNCTIONレイヤー)
         jp_nijuu_kakko {
             bindings = <&macro_braces>;
-            key-positions = <32 33>;
+            key-positions = <31 32>;
             layers = <1>;
         };
     };
@@ -208,7 +208,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans    &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
