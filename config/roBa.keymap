@@ -95,6 +95,11 @@
             key-positions = <31 32>;
             layers = <1>;
         };
+        // B+F13: 強制的にdefaultレイヤーへ戻す
+        to_default {
+            bindings = <&to 0>;
+            key-positions = <15 16>;
+        };
     };
 
     macros {
