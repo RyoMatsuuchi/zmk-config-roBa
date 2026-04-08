@@ -336,5 +336,5 @@ combos:
 - p: [31, 32]
   k: '&macro_braces'
   l: [FUNCTION]
-- p: [15, 16]
+- p: [25, 26]
   k: {t: default, h: toggle}
