@@ -160,10 +160,10 @@
     };
 
     behaviors {
-        // dキー専用: タイピング中の誤発火防止
-        lt_d: lt_d {
+        // ホームポジションキー用: タイピング中の誤発火防止
+        lt_hp: lt_hp {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_D";
+            label = "LAYER_TAP_HOMEPOS";
             bindings = <&mo>, <&kp>;
             #binding-cells = <2>;
             flavor = "balanced";
@@ -187,8 +187,8 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                                          &kp Y              &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &lt_d 3 D     &kp F                        &kp G        &kp C_PLAY_PAUSE                           &kp QUESTION            &kp H              &kp J  &kp K      &kp L    &kp ENTER
+&kp Q             &kp W         &kp E         &kp R                        &kp T                                                                          &kp Y              &kp U  &lt_hp 5 I    &kp O    &kp P
+&kp A             &kp S         &lt_hp 3 D     &kp F                        &kp G        &kp C_PLAY_PAUSE                           &kp QUESTION            &kp H              &kp J  &kp K      &kp L    &kp ENTER
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp F13                                    &lt_to_layer_0 4 SLASH  &kp N              &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
 &kp LEFT_ALT      &kp LEFT_WIN  &kp LCTRL     &kp TAB     &lt 2 LANG2             &kp SPACE        &lt_to_layer_0 6 SEMICOLON  &lt 1 LANG1                                                             &lt 5 ESC
             >;
@@ -200,7 +200,7 @@
             bindings = <
 &kp N1            &kp N2     &kp N3   &kp N4              &kp N5                                                   &kp PLUS       &kp PIPE           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
 &kp SEMICOLON     &kp COLON  &kp SQT  &kp DOUBLE_QUOTES   &kp GRAVE      &trans                &kp ASTERISK        &kp MINUS      &kp SLASH          &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
-&trans            &kp N7     &kp N8   &kp N9              &kp TILDE      &kp AT_SIGN           &kp EXCLAMATION     &kp UNDERSCORE &kp BACKSLASH      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+&trans            &kp N7     &kp N8   &kp N9              &kp TILDE      &kp AT_SIGN           &macro_launcher     &kp UNDERSCORE &kp BACKSLASH      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
 &trans            &trans     &trans   &trans              &trans         &trans                &trans              &trans                                                                          &trans
             >;
 
