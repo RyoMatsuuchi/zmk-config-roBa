@@ -37,8 +37,8 @@ layers:
   - BACKSPACE
   - LEFT ALT
   - LEFT WIN
-  - LCTRL
   - TAB
+  - LCTRL
   - {t: LANG2, h: NUM}
   - SPACE
   - {t: '&to_layer_0 SEMICOLON', h: '6'}
@@ -78,7 +78,7 @@ layers:
   - \
   - '['
   - ']'
-  - {t: ▽, type: trans}
+  - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
