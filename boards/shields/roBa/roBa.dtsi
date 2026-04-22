@@ -116,6 +116,18 @@
         compatible = "zmk,input-listener";
         status = "disabled";
     };
+
+    // オートマウスレイヤー用のカスタム temp-layer プロセッサ
+    //   require-prior-idle-ms=300 : 直前300ms以内に打鍵があれば発火しない(タイピング中の誤爆防止)
+    //   excluded-positions=<18 20>: J(18)/L(20) 位置のみレイヤー維持。
+    //                               MOUSE レイヤーの MB1/MB2 配置と揃えること
+    //                               (config/roBa.keymap の matrix_transform 依存)
+    mouse_temp_layer: mouse_temp_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        require-prior-idle-ms = <300>;
+        excluded-positions = <18 20>;
+    };
 };
 
 &spi0 {

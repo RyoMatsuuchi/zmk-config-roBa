@@ -16,7 +16,10 @@
 };
 
 &trackball {
-    automouse-layer = <4>;
+    // ドライバ内蔵のオートマウス機能は無効化し、
+    // trackball_listener 側の input-processor-temp-layer で代替する
+    // (J/L 以外のキー入力で即レイヤー脱出するため)
+    automouse-layer = <(-1)>;
     scroll-layers = <5>;
 
     // arrows {
