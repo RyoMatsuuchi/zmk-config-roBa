@@ -105,6 +105,17 @@
             bindings = <&to 0>;
             key-positions = <25 26>;
         };
+
+        // Cmd(35) + 英数(38): 左Cmd・右Cmd を同時に押した状態にする
+        // LG(RIGHT_GUI) = 左GUIモディファイア付きの右GUIキー。
+        // slow-release: 片方を離しても、両キーを離すまでCmd状態を保持する
+        //               (モディファイアとして他キーと併用するため)
+        cmd_both {
+            bindings = <&kp LG(RIGHT_GUI)>;
+            key-positions = <35 38>;
+            layers = <0>;
+            slow-release;
+        };
     };
 
     macros {
