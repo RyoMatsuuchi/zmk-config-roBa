@@ -35,8 +35,8 @@ layers:
   - ','
   - .
   - BACKSPACE
-  - LEFT ALT
-  - LEFT WIN
+  - '&opt_mo_to0'
+  - '&cmd_mo_to0'
   - TAB
   - LCTRL
   - {t: LANG2, h: NUM}
