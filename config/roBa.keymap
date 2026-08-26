@@ -137,6 +137,15 @@
             layers = <0>;
             slow-release;
         };
+
+        // Q(0) + W(1): macOS の範囲選択スクリーンショット (Command+Shift+4)。
+        // 数字レイヤーへ移動せず、左手だけで標準キャプチャを起動する。
+        screenshot_area {
+            bindings = <&kp LG(LS(N4))>;
+            key-positions = <0 1>;
+            layers = <0>;
+            timeout-ms = <50>;
+        };
     };
 
     macros {

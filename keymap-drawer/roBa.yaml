@@ -347,3 +347,6 @@ combos:
 - p: [35, 38]
   k: Gui+RIGHT GUI
   l: [default]
+- p: [0, 1]
+  k: Gui+Sft+4
+  l: [default]

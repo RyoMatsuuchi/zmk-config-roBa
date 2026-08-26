@@ -15,3 +15,8 @@ Edit Text Shortcut には `F19` を設定してください。`V`、`B`、左ロ
 `F13` を同時押しすると、Fluid Voice のEdit Textモードを呼び出せます。
 
 `F13` 単独の既存割り当ては変更していないため、Aqua Voice は従来どおり利用できます。
+
+## macOS screenshot
+
+デフォルトレイヤーで `Q` と `W` を同時押しすると、macOS標準の
+`Command + Shift + 4` を送り、範囲選択スクリーンショットを起動します。
