@@ -355,6 +355,10 @@ path.combo {
 </a><text x="225" y="162" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-8">
+<rect rx="6" ry="6" x="267" y="149" width="28" height="26" class="combo"/>
+<text x="281" y="162" class="combo tap">F20</text>
+</g>
+<g class="combo combopos-9">
 <path d="M178,220 l-75,-8" class="combo"/>
 <path d="M178,220 l75,8" class="combo"/>
 <rect rx="6" ry="6" x="164" y="207" width="28" height="26" class="combo"/>
