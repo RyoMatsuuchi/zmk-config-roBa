@@ -106,6 +106,27 @@
             key-positions = <25 26>;
         };
 
+        // B(26) + ロータリー直下/F13(27): Fluid Voice 用の F20。
+        // Automatic (Both) では短押しがトグル、長押しが push-to-talk になる。
+        // slow-release により片方を先に離しても、両方を離すまで F20 を保持する。
+        fluid_voice {
+            bindings = <&kp F20>;
+            key-positions = <26 27>;
+            layers = <0>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+
+        // V(25) + B(26) + ロータリー直下/F13(27): Fluid Voice Edit Text 用の F19。
+        // fluid_voice と完全に重なる3キーコンボだが、ZMKは長い方を優先する。
+        fluid_voice_edit {
+            bindings = <&kp F19>;
+            key-positions = <25 26 27>;
+            layers = <0>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+
         // Cmd(35) + 英数(38): 左Cmd・右Cmd を同時に押した状態にする
         // LG(RIGHT_GUI) = 左GUIモディファイア付きの右GUIキー。
         // slow-release: 片方を離しても、両キーを離すまでCmd状態を保持する
@@ -115,6 +136,15 @@
             key-positions = <35 38>;
             layers = <0>;
             slow-release;
+        };
+
+        // Q(0) + W(1): macOS の範囲選択スクリーンショット (Command+Shift+4)。
+        // 数字レイヤーへ移動せず、左手だけで標準キャプチャを起動する。
+        screenshot_area {
+            bindings = <&kp LG(LS(N4))>;
+            key-positions = <0 1>;
+            layers = <0>;
+            timeout-ms = <50>;
         };
     };
 

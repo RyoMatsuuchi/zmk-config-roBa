@@ -338,6 +338,15 @@ combos:
   l: [FUNCTION]
 - p: [25, 26]
   k: {t: default, h: toggle}
+- p: [26, 27]
+  k: F20
+  l: [default]
+- p: [25, 26, 27]
+  k: F19
+  l: [default]
 - p: [35, 38]
   k: Gui+RIGHT GUI
+  l: [default]
+- p: [0, 1]
+  k: Gui+Sft+4
   l: [default]
