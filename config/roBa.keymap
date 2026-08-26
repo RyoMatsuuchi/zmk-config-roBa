@@ -106,21 +106,22 @@
             key-positions = <25 26>;
         };
 
-        // B(26) + ロータリー直下/F13(27): Fluid Voice 用の F20。
+        // B(26) + ロータリー直下/F13(27): Fluid Voice 用の Hyper+D。
         // Automatic (Both) では短押しがトグル、長押しが push-to-talk になる。
-        // slow-release により片方を先に離しても、両方を離すまで F20 を保持する。
+        // F20 は Fluid Voice 側で ? 表示になるため、認識しやすい通常キー付き修飾へ逃がす。
+        // slow-release により片方を先に離しても、両方を離すまでショートカットを保持する。
         fluid_voice {
-            bindings = <&kp F20>;
+            bindings = <&kp LC(LA(LG(LS(D))))>;
             key-positions = <26 27>;
             layers = <0>;
             timeout-ms = <50>;
             slow-release;
         };
 
-        // V(25) + B(26) + ロータリー直下/F13(27): Fluid Voice Edit Text 用の F19。
+        // V(25) + B(26) + ロータリー直下/F13(27): Fluid Voice Edit Text 用の Hyper+E。
         // fluid_voice と完全に重なる3キーコンボだが、ZMKは長い方を優先する。
         fluid_voice_edit {
-            bindings = <&kp F19>;
+            bindings = <&kp LC(LA(LG(LS(E))))>;
             key-positions = <25 26 27>;
             layers = <0>;
             timeout-ms = <50>;
