@@ -341,6 +341,9 @@ combos:
 - p: [26, 27]
   k: F20
   l: [default]
+- p: [25, 26, 27]
+  k: F19
+  l: [default]
 - p: [35, 38]
   k: Gui+RIGHT GUI
   l: [default]
