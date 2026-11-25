@@ -19,10 +19,10 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        // トラックボール操作でレイヤー4(MOUSE)を3000ms一時有効化
+        // トラックボール操作でレイヤー4(MOUSE)を5000ms一時有効化
         // 除外キー(J/L・Shift/Option/Command)以外の打鍵で即脱出するので長めでも実害少ない
         // (即脱出ロジックと除外位置は mouse_temp_layer 側で制御)
-        input-processors = <&mouse_temp_layer 4 3000>;
+        input-processors = <&mouse_temp_layer 4 5000>;
     };
 };
 
